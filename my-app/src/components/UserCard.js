@@ -1,7 +1,6 @@
 import React from 'react'
 
 function UserCard(props){
-    console.log(props.userInfo)
     return(
         <div className='UserCard'>
             <img src={props.userInfo.avatar_url} alt='Avatar'/>
