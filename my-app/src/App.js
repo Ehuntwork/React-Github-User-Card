@@ -23,7 +23,12 @@ class App extends React.Component{
   }
 
   render() {
-    console.log("rendering!");
+    console.log("rendering!")
+
+    if (this.state.user.length === 0) {
+      return <p>Loading data...</p>;
+    }
+    
     return (
       <div className="App">
         <UserCard userInfo={this.state.user} />
